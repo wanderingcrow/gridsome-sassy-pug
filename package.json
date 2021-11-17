@@ -1,0 +1,20 @@
+{
+  "name": "blank-gridsome",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-sass-resources-loader": "^0.0.3"
+  },
+  "devDependencies": {
+    "gridsome-plugin-pug": "^0.0.3",
+    "pug": "^2.0.4",
+    "sass": "^1.43.4",
+    "sass-loader": "^10.2.0",
+    "style-resources-loader": "^1.4.1"
+  }
+}

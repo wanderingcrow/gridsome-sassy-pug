@@ -1,1 +1,32 @@
 $cotton-candy: pink;
+
+// ---------------------------------------------------------------------
+// media queries
+// ---------------------------------------------------------------------
+$desktop-width: 1024px;
+$phone-width: 768px;
+$tablet-width: $phone-width + 1px;
+
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$phone-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

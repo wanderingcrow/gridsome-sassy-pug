@@ -13,8 +13,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  h1 { 
-    color: $cotton-candy;
-  }
+<style lang="sass" scoped>
+  h1 
+    color: $cotton-candy
 </style>

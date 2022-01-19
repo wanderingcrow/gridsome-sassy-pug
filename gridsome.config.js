@@ -5,7 +5,7 @@ function addStyleResource (rule) {
     .loader('style-resources-loader')
     .options({
       patterns: [
-        path.resolve(__dirname, './src/assets/styles/_var.scss'),
+        path.resolve(__dirname, './src/assets/styles/_var.sass'),
       ],
     })
 }
@@ -16,7 +16,7 @@ module.exports = {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
     types.forEach(type => {
-      addStyleResource(config.module.rule('scss').oneOf(type))
+      addStyleResource(config.module.rule('sass').oneOf(type))
     })
   },
   plugins: [

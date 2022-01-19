@@ -26,12 +26,6 @@ export default {
 }
 </script>
 
-<style lang='scss'>
-.home-links a {
-  margin-right: 1rem;
-}
+<style lang='sass'>
 
-h1 {
-  color: red;
-}
 </style>
